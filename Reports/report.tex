@@ -1,0 +1,179 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Example: Project Report
+%
+% Source: http://www.howtotex.com
+%
+% Feel free to distribute this example, but please keep the referral
+% to howtotex.com
+% Date: March 2011 
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% How to use writeLaTeX: 
+%
+% You edit the source code here on the left, and the preview on the
+% right shows you the result within a few seconds.
+%
+% Bookmark this page and share the URL with your co-authors. They can
+% edit at the same time!
+%
+% You can upload figures, bibliographies, custom classes and
+% styles using the files menu.
+%
+% If you're new to LaTeX, the wikibook is a great place to start:
+% http://en.wikibooks.org/wiki/LaTeX
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Edit the title below to update the display in My Documents
+%\title{Project Report}
+%
+%%% Preamble
+\documentclass[paper=a4, fontsize=11pt]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage{fourier}
+
+\usepackage[english]{babel}															% English language/hyphenation
+\usepackage[protrusion=true,expansion=true]{microtype}	
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage[pdftex]{graphicx}	
+\usepackage{url}
+
+
+%%% Custom sectioning
+\usepackage{sectsty}
+\allsectionsfont{\centering \normalfont\scshape}
+
+
+%%% Custom headers/footers (fancyhdr package)
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead{}											% No page header
+\fancyfoot[L]{}											% Empty 
+\fancyfoot[C]{}											% Empty
+\fancyfoot[R]{\thepage}									% Pagenumbering
+\renewcommand{\headrulewidth}{0pt}			% Remove header underlines
+\renewcommand{\footrulewidth}{0pt}				% Remove footer underlines
+\setlength{\headheight}{13.6pt}
+
+
+%%% Equation and float numbering
+\numberwithin{equation}{section}		% Equationnumbering: section.eq#
+\numberwithin{figure}{section}			% Figurenumbering: section.fig#
+\numberwithin{table}{section}				% Tablenumbering: section.tab#
+
+
+%%% Maketitle metadata
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} 	% Horizontal rule
+
+\title{
+		%\vspace{-1in} 	
+		\usefont{OT1}{bch}{b}{n}
+		\normalfont \huge \textsc{Association of Computer Engineers(ACE)} \\ [25pt]
+        \normalfont \normalsize \textsc{School of Computing(SOC), SASTRA Univerisity} \\ [25pt]
+		\horrule{0.5pt} \\[0.4cm]
+		\huge Odd Semester Report - 2014 \\
+		\horrule{2pt} \\[0.5cm]
+}
+\author{
+		\normalfont 								\normalsize
+        Abhinav S V,
+        General Secretary ACE\\[-3pt]		\normalsize
+        \today
+}
+\date{}
+
+
+
+%%% Begin document
+\begin{document}
+\maketitle
+\section{Inception}
+  The Association of Computer Engineers was founded in the year 1995 in order to provide a platform for all the students to learn and cultivate the interest in the subject.  
+  ACE provides a good opportunity for the organizers to showcase their management skills while the participants enjoy the privilege of demonstrating their talents.
+  A new set of ACE team of the Chairman, General Secretary, Joint Secretary and the executive members were elected by the President of ACE Associate Dean Prof.Dr.Dr. UMAMAKESWARI .A and ACE-Staff coordinators Prof.Dr. VENKATESAN .D and Prof. NAREN .J on 21st of July 2014.
+
+\subsection{Student Council of ACE}
+ACE student council consists of 3 leaders and 12 exceutive members making a total of 15 member  team.
+\begin{itemize}
+	\item Chairman ACE
+		\begin{itemize}
+		\item  Shri. Harihara Subrahmaniam M  , IV Year CSE
+		\end{itemize}
+	\item General Secretary ACE
+    	\begin{itemize}
+		\item  Shri. Abhinav S V , III Year CSE
+		\end{itemize}
+     \item Joint Secretary ACE
+    	\begin{itemize}
+		\item  Shri. Shreyas C , II Year CSE
+		\end{itemize}
+      \item Executive Memebers ACE
+    	\begin{itemize}
+		\item  IV Year members
+        	\begin{itemize}
+			\item Shri.Ram Gopalan V
+			\item Shri.Ramanathan K
+			\item Shri.Praneeth Ganta
+			\item Kum.M P P Pranathi
+			\end{itemize}	
+        \item  III Year members
+        	\begin{itemize}
+			\item  Shri.Prassnna Venkates V M
+            \item  Shri.D Venkata Manoj Reddy
+            \item  Shri.N Sai Kiran
+            \item  Shri.Balachandar S
+			\end{itemize}	
+        \item  II Year members
+        	\begin{itemize}
+			\item Shri.Sudharshan C
+			\item Shri.Vaigunth T C
+			\item Kum.Anupama R
+			\item Shri.Varada Vamsi Madhur
+			\end{itemize}	
+		\end{itemize}
+        The Student Council of ACE is responsible for deciding on the events, the leaders, making the events happen at ACE. The student council has 3 major jobs. Publicity and Relationship(PR) Team, Organizing Team, Events Team. having their respective jobs. The PR team is responsible for publicity of the events. The organizing team is respinsible for getting the room ready for the event. Events team is responsible for deciding on the event happening in ACE.
+        
+	
+\end{itemize}
+
+\subsection{Heading on level 2 (subsection)}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+\begin{align}
+	A =  
+	\begin{bmatrix}
+	A_{11} & A_{21} \\
+  	A_{21} & A_{22}
+	\end{bmatrix}
+\end{align}
+Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+
+\subsubsection{Heading on level 3 (subsubsection)}
+Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+
+\paragraph{Heading on level 4 (paragraph)}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+
+
+\section{Lists}
+
+\subsection{Example for list (3*itemize)}
+\begin{itemize}
+	\item First item in a list 
+		\begin{itemize}
+		\item First item in a list 
+			\begin{itemize}
+			\item First item in a list 
+			\item Second item in a list 
+			\end{itemize}
+		\item Second item in a list 
+		\end{itemize}
+	\item Second item in a list 
+\end{itemize}
+
+\subsection{Example for list (enumerate)}
+\begin{enumerate}
+	\item First item in a list 
+	\item Second item in a list 
+	\item Third item in a list
+\end{enumerate}
+%%% End document
+\end{document}
